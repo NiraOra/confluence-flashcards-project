@@ -131,7 +131,7 @@ Where the folders are as follows:
     2. Run this anywhere in the terminal to add the Ngrok auth token (for access to the website):
 
         ``` (shell)
-        ngrok config add-authtoken 2nHmclkN2E4BZv3fWudgOG1Wj5K_zxg5Xwc9XCRNmFTtvm5P
+        ngrok config add-authtoken [GENERATED_AUTHTOKEN]
         ```
 
 ## Running the Code
