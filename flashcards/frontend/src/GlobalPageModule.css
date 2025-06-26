@@ -1,0 +1,238 @@
+.global-page-container {
+  min-height: 1000px;
+}
+.global-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.global-page-headlines {
+  display: flex;
+  flex-direction: column;
+}
+
+.global-page-flash-icon {
+  color: rgb(12, 102, 228);
+  margin-right: 10px;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.global-page-headline {
+  font-size: 36px;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.global-page-subheadline {
+  font-size: 16px;
+  color: darkgray;
+  font-style: italic;
+}
+
+.global-page-search {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.global-page-search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid darkgray;
+  border-radius: 6px;
+  padding: 3px 8px;
+  width: 200px;
+  background-color: white;
+}
+
+.global-page-search-box:focus-within {
+  border-color: rgb(12, 102, 228);
+}
+
+.global-page-search-icon {
+  position: absolute;
+  left: 6px;
+  color: darkgray;
+  font-size: 16px;
+}
+
+.global-page-container #search-input {
+  width: 100%;
+  padding: 4px;
+  font-size: 14px;
+  color: darkgray;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-left: 20px;
+}
+
+.global-page-container #search-input::placeholder {
+  color: grey;
+  font-size: 14px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  z-index: 1000;
+}
+
+.global-page-recents,
+.global-page-flashcards,
+.global-page-decks {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.global-page-tags {
+  font-size: 18px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.global-page-create-tag-button,
+.global-page-create-flashcard-button,
+.global-page-create-deck-button {
+  background-color: rgb(12,102,228);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.global-page-create-tag-button:hover,
+.global-page-create-flashcard-button:hover,
+.global-page-create-deck-button:hover {
+  background-color: rgb(1,85,204);
+}
+
+.breadcrumb-item {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.global-page-badge-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-top: 12px;
+}
+
+.global-page-badge-container .badge {
+  color: #2c2c2c;
+  padding: 6px 12px;
+  background: #DDE4FF;
+  width: fit-content;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.global-page-badge-container .badge:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 2px currentColor;
+}
+
+.global-page-badge-container .badge.blue {
+  color: #5372F0;
+  background: #DDE4FF;
+}
+
+.global-page-badge-container .badge.red {
+  color: #B22485;
+  background: #F7DFF5;
+}
+
+.global-page-badge-container .badge.orange {
+  color: #B25A2B;
+  background: #FFE3D2;
+}
+
+.global-page-badge-container .badge.green {
+  color: #205C20;
+  background: #D6F8D6;
+}
+
+.global-page-badge-container .badge.yellow {
+  color: #856404;
+  background: #fff3cd;
+}
+
+.global-page-badge-container .badge.purple {
+  color: #6B4BA3;
+  background: #E9DDFF;
+}
+
+.global-page-badge-container .badge .all-tags {
+  background-color: #484848; 
+  color: rgb(255, 255, 255);
+}
+
+.badge.all-tags:hover {
+  background-color: #b3b3b3; 
+}
+
+.global-page-badge-container .badge.my-stuff {
+  display: flex;
+  align-items: center; 
+  gap: 5px; 
+  background: #484848; 
+  color: white;
+  text-align: center;
+  height: 32px;
+}
+
+.global-page-container .toggle-button-group {
+  margin-right: 10px;
+}
+
+.global-page-container .toggle-button {
+  padding: 7px;
+  font-size: 12px;
+}
+
+.global-page-container .tag-edit-button,
+.global-page-container .tag-delete-button {
+  color: lightgrey;
+  cursor: pointer;
+}
+
+.global-page-container .tag-edit-button:hover,
+.global-page-container .tag-delete-button:hover {
+  color: darkgrey;
+  background-color: transparent;
+}
+
+.global-page-badge-container .css-6ipr0p .MuiChip-deleteIcon,
+.global-page-badge-container .css-1c0dsut .MuiChip-deleteIcon {
+  color: inherit;
+}
+
+.global-page-badge-container .css-6ipr0p .MuiChip-deleteIcon:hover,
+.global-page-badge-container .css-1c0dsut .MuiChip-deleteIcon:hover {
+  color: inherit;
+}
+
+.global-page-container .MuiTypography-root .MuiTypography-body1 .MuiFormControlLabel-label .css-fyswvn {
+  font-size: inherit !important;
+  font-family: inherit !important;
+}

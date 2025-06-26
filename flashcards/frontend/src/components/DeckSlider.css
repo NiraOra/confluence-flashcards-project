@@ -1,0 +1,186 @@
+.deck-list {
+  padding-left: 0px;
+}
+
+.deck-list .deck-item {
+  list-style: none;
+}
+
+.deck-list .deck-item .deck-link {
+  margin: 15px 10px 8px 10px;
+  padding: 12px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 3px grey);
+  background: white;
+  position: relative;
+  min-height: 250px;
+}
+
+.deck-list .deck-item .deck-link::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 150px;
+  height: 20px;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  left: -1.9px;
+}
+
+.deck-list .deck-item .deck-link:hover {
+  border-color: #0155cc;
+  cursor: pointer;
+}
+
+.deck-list .deck-item .deck-link:hover::after {
+  background: #0155cc;
+}
+
+.deck-list .deck-item .deck-link:hover::before {
+  background: #fff;
+  border-left: 2px solid #0155cc;
+  border-radius: 20px 20px 0 0;
+  border-top: 2px solid #0155cc;
+  border-right: 2px solid #0155cc;
+}
+
+.deck-list .deck-item .deck-link::after {
+  content: '';
+  position: absolute;
+  left:  25px;
+  width: 60px;
+  height: 8px;
+  top: -10px;
+  background: rgb(12, 102, 228);
+  border-radius: 0 0 5px 5px;
+}
+
+.deck-right-border {
+  background: white;
+  height: 12px;
+  position: absolute;
+  width: 158px;
+  top: 0px;
+}
+
+.deck-list .deck-link .deck-tags {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.deck-list .deck-link .badge {
+  color: #5372F0;
+  padding: 6px 12px;
+  font-size: 10px;
+  margin: 12px 0 14px;
+  background: #DDE4FF;
+  width: fit-content;
+  border-radius: 40px;
+  white-space: nowrap;
+}
+
+.deck-list .deck-link .badge.blue {
+  color: #5372F0;
+  background: #DDE4FF;
+}
+
+
+.deck-list .deck-link .badge.red {
+  color: #B22485;
+  background: #F7DFF5;
+}
+
+.deck-list .deck-link .badge.orange {
+  color: #B25A2B;
+  background: #FFE3D2;
+}
+
+.deck-list .deck-link .badge.green {
+  color: #205C20;
+  background: #D6F8D6;
+}
+
+.deck-list .deck-link .badge.yellow {
+  color: #856404;
+  background: #fff3cd;
+}
+
+.deck-list .deck-link .badge.purple {
+  color: #6B4BA3;
+  background: #E9DDFF;
+}
+
+.deck-list .deck-link .deck-name {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  overflow-y: auto;
+  max-height: 60px;
+  line-height: normal;
+}
+
+.deck-list .deck-link .deck-description {
+  font-size: 14px;
+  color: darkgrey;
+  font-weight: bold;
+  margin-bottom: 6px;
+  word-wrap: break-word;
+  overflow-y: auto;
+  max-height: 60px;
+  line-height: normal;
+}
+
+.deck-list .deck-link .ai-deck-description {
+  font-size: 14px;
+  color: rgb(12, 102, 228);
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-decoration: underline;
+}
+
+.deck-list .deck-link .ai-deck-description:hover {
+  cursor: pointer;
+}
+.deck-list .deck-link .deck-flashcard-amount {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.deck-list .deck-link .deck-owner {
+  font-size: 12px;
+  color: #333;
+  font-style: italic;
+  margin-bottom: 5px;
+  position: absolute;
+  bottom: 40px;
+  right: 12px;
+}
+
+.deck-list .deck-link .deck-button {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+}
+
+.deck-list .deck-link .deck-edit-button,
+.deck-list .deck-link .deck-delete-button {
+  color: lightgrey;
+  cursor: pointer;
+}
+
+.deck-list .deck-link .deck-edit-button:hover,
+.deck-list .deck-link .deck-delete-button:hover {
+  color: darkgrey;
+}
+
+.splide__track.splide__track--slide.splide__track--ltr.splide__track--draggable {
+  margin: 15px 55px;
+}

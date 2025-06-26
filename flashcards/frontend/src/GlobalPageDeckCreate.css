@@ -1,0 +1,86 @@
+.decks-select-scroll,
+.flashcards-select-scroll {
+  max-height: 300px;
+  overflow-y: scroll;
+  flex-direction: column;
+}
+
+.decks-select-scroll-item,
+.flashcards-select-scroll-item {
+  display: flex;
+  align-items: center;
+}
+
+.decks-select-scroll-item input,
+.flashcards-select-scroll-item input {
+  margin-right: 8px;
+}
+
+.decks-select-scroll-item label,
+.flashcards-select-scroll-item label {
+  margin: 5px;
+}
+
+.label-clickable {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.label-clickable span {
+  margin-right: 8px;
+}
+
+.toggle-icon {
+  margin-top: 4px;
+}
+
+.css-9uim6b {
+  padding-bottom: 0 !important;
+}
+
+
+.deck-page-search {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.deck-page-search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid darkgray;
+  border-radius: 6px;
+  padding: 3px 8px;
+  width: 200px;
+  background-color: white;
+}
+
+.deck-page-search-box:focus-within {
+  border-color: rgb(12, 102, 228);
+}
+
+.deck-page-search-icon {
+  position: absolute;
+  left: 6px;
+  color: darkgray;
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.deck-page-search #flashcard-search-input {
+  width: 100%;
+  font-size: 12px;
+  color: darkgray;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-left: 20px;
+}
+
+.deck-page-search #flashcard-search-input::placeholder {
+  color: grey;
+  font-size: 12px;
+}

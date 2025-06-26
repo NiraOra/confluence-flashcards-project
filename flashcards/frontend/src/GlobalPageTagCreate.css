@@ -1,0 +1,104 @@
+.badge-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badge.selected {
+  box-shadow: inset 0 0 0 2px currentColor;
+}
+
+.badge {
+  color: #5372F0;
+  padding: 6px 12px;
+  margin: 12px 0 14px;
+  background: #DDE4FF;
+  width: fit-content;
+  border-radius: 40px;
+}
+
+.badge:hover {
+  cursor: pointer;
+}
+
+.badge-container .badge:first-child {
+  margin-top: 12px;
+}
+
+.badge.blue {
+  color: #5372F0;
+  background: #DDE4FF;
+}
+
+.badge.red {
+  color: #B22485;
+  background: #F7DFF5;
+}
+
+.badge.orange {
+  color: #B25A2B;
+  background: #FFE3D2;
+}
+
+.badge.green {
+  color: #205C20;
+  background: #D6F8D6;
+}
+
+.badge.yellow {
+  color: #856404;
+  background: #fff3cd;
+}
+
+.badge.purple {
+  color: #6B4BA3;
+  background: #E9DDFF;
+}
+
+
+.tag-page-search {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+.tag-page-search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid darkgray;
+  border-radius: 6px;
+  padding: 3px 8px;
+  width: 200px;
+  background-color: white;
+}
+
+.tag-page-search-box:focus-within {
+  border-color: rgb(12, 102, 228);
+}
+
+.tag-page-search-icon {
+  position: absolute;
+  left: 6px;
+  color: darkgray;
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.tag-page-search #tag-deck-search-input, 
+.tag-page-search #flashcard-search-input {
+  width: 100%;
+  font-size: 12px;
+  color: darkgray;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-left: 20px;
+}
+
+.tag-page-search #tag-deck-search-input::placeholder, 
+.tag-page-search #flashcard-search-input::placeholder {
+  color: grey;
+  font-size: 12px;
+}

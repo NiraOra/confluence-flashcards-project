@@ -1,0 +1,64 @@
+.content-byline-flash-icon,
+.content-byline-ai-icon,
+.content-byline-redo-icon,
+.content-byline-redo-icon {
+  color: rgb(12, 102, 228);
+}
+
+.ai-deck-creation h2 {
+  margin-left: 5px;
+}
+
+.ai-deck-creation .ai-flashcards-select-scroll {
+  max-height: 80px;
+  overflow-y: scroll;
+  flex-direction: column; 
+}
+
+.ai-deck-creation .ai-flashcards-select-scroll-item {
+  display: flex;
+  align-items: center;
+}
+
+.ai-deck-creation input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.ai-deck-creation .content-byline-ai-icon {
+  margin-left: 5px;
+}
+
+.ai-deck-creation .css-wwet8f {
+  margin-top: 5px;
+}
+
+.ai-deck-creation .content-byline-button-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.ai-deck-creation .content-byline-button {
+  background-color: rgb(12,102,228);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.ai-deck-creation .content-byline-button:hover {
+  background-color: rgb(1,85,204);
+}
+
+.ai-deck-creation .alert {
+  margin-top: 5px;
+}
+
+.content-byline-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

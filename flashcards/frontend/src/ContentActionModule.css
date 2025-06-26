@@ -1,0 +1,27 @@
+.flashcard-creation {
+  background-color: white;
+  font-family: 'Arial', sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 40px;
+  position: relative;
+  width: 100vw;
+}
+
+.flashcard-creation h2 {
+  margin-left: 5px;
+}
+
+.content-action-flash-icon {
+  color: rgb(12, 102, 228);
+}
+
+.flashcard-title {
+  margin-bottom: 10px;
+}
+
+.content-action-button-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}

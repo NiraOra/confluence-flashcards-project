@@ -1,0 +1,91 @@
+modules:
+
+  confluence:contentAction:
+    - key: content-action
+      resource: main
+      resolver:
+        function: resolver
+      viewportSize: medium
+      title: Cardify.ai - Create a flashcard
+
+  confluence:globalPage:
+    - key: global-page
+      resource: main
+      resolver:
+        function: resolver
+      title: Cardify.ai - Homepage
+      route: global-page
+
+  confluence:contextMenu:
+    - key: context-menu
+      resource: main
+      resolver:
+        function: resolver
+      #keep viewport size as large until we can figure out how to make the modal bigger
+      viewportSize: large
+      title: Cardify.ai - Flashcards Generator
+
+  confluence:contentBylineItem:
+    - key: content-byline
+      resource: main
+      resolver:
+        function: resolver
+      #keep viewport size as large until we can figure out how to make the modal bigger
+      viewportSize: large
+      title: Cardify.ai - Deck Generator
+
+  consumer:
+    - key: queue-consumer
+      # Name of the queue for which this consumer will be invoked
+      queue: flashcard-generation
+      resolver:
+        function: resolver
+        # resolver function to be called with payload
+        method: event-listener
+
+  function:
+    - key: resolver
+      handler: index.handler
+      # timeoutSeconds: 600 # for example
+
+
+
+resources:
+
+  - key: main
+    path: frontend/build
+
+
+
+permissions:
+
+  scopes:
+    - read:confluence-content.summary
+    - write:confluence-content
+    - storage:app
+    - read:confluence-user
+    - read:user:confluence
+    - read:content-details:confluence
+    - read:user:confluence
+    - read:page:confluence
+
+  content:
+    styles:
+      - 'unsafe-inline'
+
+  external:
+    fetch:
+      backend:
+        - marlin-excited-gibbon.ngrok-free.app
+
+
+
+app:
+
+  id: ari:cloud:ecosystem::app/61ace610-ef8d-4591-9283-afd839ca356c
+
+  runtime:
+    name: nodejs20.x
+
+  # storage:
+

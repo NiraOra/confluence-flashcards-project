@@ -1,0 +1,187 @@
+.deck-display-container {
+  overflow: auto;
+  min-height: 100%;
+  height: 790px;
+}
+
+.deck-title-and-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.title-left-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.left-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.right-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.card-list .card-item .card-link {
+  display: block;
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  margin: 8px 10px;
+}
+
+.card-list .card-link .card-owner {
+  font-size: 12px;
+  color: #333;
+  font-style: italic;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.card-list .card-link .card-button {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 5px 7px;
+  background-color: #0052CC;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+button:hover {
+  background-color: #0747A6;
+}
+
+.deck-display-add-study-session-icon.disabled,
+.deck-display-quiz-icon.disabled,
+.deck-display-quiz-results-icon.disabled  {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.deck-display-delete-icon {
+  background-color: #D32F2F;
+}
+
+.deck-display-delete-icon:hover {
+  background-color: #B71C1C;
+}
+
+.deck-display-container .card-list {
+  overflow-y: scroll;
+  max-height: 625px;
+}
+
+.deck-tags {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.badge {
+  color: #5372F0;
+  padding: 6px 12px;
+  font-size: 10px;
+  margin: 12px 0 14px;
+  background: #DDE4FF;
+  width: fit-content;
+  border-radius: 40px;
+}
+
+
+.badge.blue {
+  color: #5372F0;
+  background: #DDE4FF;
+}
+
+.badge.red {
+  color: #B22485;
+  background: #F7DFF5;
+}
+
+.badge.orange {
+  color: #B25A2B;
+  background: #FFE3D2;
+}
+
+.badge.green {
+  color: #205C20;
+  background: #D6F8D6;
+}
+
+.badge.yellow {
+  color: #856404;
+  background: #fff3cd;
+}
+
+.badge.purple {
+  color: #6B4BA3;
+  background: #E9DDFF;
+}
+
+.global-page-search {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.global-page-search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid darkgray;
+  border-radius: 6px;
+  padding: 3px 8px;
+  width: 200px;
+  background-color: white;
+}
+
+.global-page-search-box:focus-within {
+  border-color: rgb(12, 102, 228);
+}
+
+.global-page-search-icon {
+  position: absolute;
+  left: 6px;
+  color: darkgray;
+  font-size: 16px;
+}
+
+#search-input {
+  width: 100%;
+  padding: 4px;
+  font-size: 14px;
+  color: darkgray;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-left: 20px;
+}
+
+#search-input::placeholder {
+  color: grey;
+  font-size: 14px;
+}
