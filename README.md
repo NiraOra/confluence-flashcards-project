@@ -1,7 +1,8 @@
+**Contributors**: Zac Moses, Maddie Marum, Kristina Nunag, Mohan Das and Niranjana Arun Menon.
+
 # Cardify.ai - A Forge Custom-UI Flashcard App
 
 This project is a Forge app that allows users to make flashcards in a flash! 
-Contributors: Zac Moses, Maddie Marum, Kristina Nunag, Mohan Das and Niranjana Arun Menon
 
 This Forge app consists of Four Modules that were implemented:
 
